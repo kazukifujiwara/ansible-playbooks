@@ -2,8 +2,8 @@
 # Example command line: ansible-inventory -v --list -i inventory.yml
 
 plugin: networktocode.nautobot.inventory
-api_endpoint: http://192.168.49.1:8080
-token: "5a69e5cbc00a8aa1e1b58c86510ab65151250fca"
+api_endpoint: NAUTOBOT_API_ENDPOINT_URL
+token: NAUTOBOT_TOKEN
 validate_certs: True
 config_context: False
 group_by:
