@@ -1,0 +1,13 @@
+---
+- hosts: all
+  gather_facts: true
+  become: true
+
+  tasks:
+    - name: install modules (dnf)
+      ansible/builtin.dnf:
+        name:
+          - zip
+          - unzip
+          - tree
+        state: present
