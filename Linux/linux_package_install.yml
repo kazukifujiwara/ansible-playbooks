@@ -4,8 +4,8 @@
   become: true
 
   tasks:
-    - name: install modules (dnf)
-      ansible.builtin.dnf:
+    - name: install modules (yum)
+      ansible.builtin.yum:
         name:
           - zip
           - unzip
